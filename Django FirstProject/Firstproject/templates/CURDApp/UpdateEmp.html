@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPDATE EMPLOYEES</title>
+</head>
+<body>
+<h1>Update Employees</h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="text" name="emp_id" value="{{empdetails.emp_id}}"><br><br>
+    <input type="text" name="emp_name" value="{{empdetails.emp_name}}"><br><br>
+    <input type="text" name="emp_phone" value="{{empdetails.emp_phone}}"><br><br>
+    <input type="text" name="emp_address" value="{{empdetails.emp_address}}"><br><br>
+    <input type="text" name="emp_salary" value="{{empdetails.emp_salary}}"><br><br>
+    <input type="submit" value="Update">
+    <a href="/curd/emp/">click to view update</a>
+</form>
+
+</body>
+</html>

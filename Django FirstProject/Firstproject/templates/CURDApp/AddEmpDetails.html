@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD EMPLOYEES</title>
+</head>
+<body>
+<h1>Add Employees</h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Add Employee">
+    <a href="/curd/emp/">click here to view new employee</a>
+</form>
+<a href="/curd/emp/">click here to view new employee</a>
+
+</body>
+</html>
