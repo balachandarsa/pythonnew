@@ -1,1 +1,3 @@
- hello all
+
+ print("hello all")
+
